@@ -9,7 +9,13 @@ Enjoy!
 
 Something to remember:
 
+<<<<<<< HEAD
 **1.2:**
+=======
+**1.2**
+
+	  1. strlen() returns the length of the string, exclude '\0'.
+>>>>>>> 2c3674d8fb81617f989a8a101b45d027b070a24a
 
 	1. strlen() returns the length of the string, exclude '\0'.
 
