@@ -8,14 +8,9 @@ Solving problems every day.
 Enjoy!
 
 Something to remember:
+---
 
-<<<<<<< HEAD
-**1.2:**
-=======
 **1.2**
-
-	  1. strlen() returns the length of the string, exclude '\0'.
->>>>>>> 2c3674d8fb81617f989a8a101b45d027b070a24a
 
 	1. strlen() returns the length of the string, exclude '\0'.
 
@@ -33,3 +28,7 @@ Something to remember:
 
 	2. Do NOT use special case as the example.
 
+**1.7：**
+
+	No need to check row[] and col[] separately.
+	for i -> for j -> if(row[i] || col[j]) {Mat[i][j] = 0;}
