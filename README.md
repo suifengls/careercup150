@@ -28,7 +28,16 @@ Something to remember:
 
 	2. Do NOT use special case as the example.
 
-**1.7：**
+**1.7:**
 
 	No need to check row[] and col[] separately.
 	for i -> for j -> if(row[i] || col[j]) {Mat[i][j] = 0;}
+
+**2.1:**
+
+	After remove a node, remember to deallocate this node space (use a temperary pointer).
+
+**2.2:**
+	
+	Check with interviewers the given values in the questions.
+	(Will it execced ...? Will it be negative? ...)
