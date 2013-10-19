@@ -41,3 +41,11 @@ Something to remember:
 	
 	Check with interviewers the given values in the questions.
 	(Will it execced ...? Will it be negative? ...)
+
+**2.4:**
+
+	Remember to move forward after assignment of a new node.
+
+**2.5:**
+	
+	Reference: http://hawstein.com/posts/add-singly-linked-list.html
