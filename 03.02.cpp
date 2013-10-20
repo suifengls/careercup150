@@ -9,6 +9,8 @@ public:
 	    buffer = new int[size];
 	    minb = new int[size];
 	    ptop = -1;
+	    min = 0;
+	    minb[0] = 10000;
 	    this->size = size;
 	}
     ~stackmin()
@@ -27,16 +29,21 @@ public:
 	    else
 	    {
 		if(val <= mtop())
-		    minb[index] = val;
-		else
-		    minb[index] = mtop();
+		  {
+		    minb[min+1] = val;
+		    ++min;
+		  }
 	    }
 	    ++ptop;
 	}
     void pop()
 	{
 	    if(!empty())
+	      {
+		if(top() == mtop())
+		  --min;
 		--ptop;
+	      }
 	}
     int top()
 	{
@@ -50,7 +57,7 @@ public:
 	{
 	    if(!empty())
 	    {
-		return minb[ptop];
+		return minb[min];
 	    }
 	    return 100000;
 	}
@@ -62,6 +69,7 @@ private:
     int *buffer;
     int *minb;
     int ptop;
+    int min;
     int size;
 };
 
