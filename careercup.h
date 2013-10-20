@@ -9,6 +9,7 @@
 #include <stack>
 #include <map>
 #include <list>
+#include <climits>
 
 typedef struct ListNode
 {
@@ -52,5 +53,28 @@ ListNode *buildList(int a[], int len)
     }
     return head;
 }
-	
+
+TreeNode *buildBST(int a[], int s, int e)
+{
+    if(s > e)
+	return NULL;
+    int mid = (s + e)/2;
+    TreeNode *root = new TreeNode(a[mid]);
+    root->left = buildBST(a, s, mid-1);
+    root->right = buildBST(a, mid+1, e);
+    return root;
+}
+
+void printTree(TreeNode *root)
+{
+    if(!root)
+	std::cout <<  "# ";
+    else
+    {
+	std::cout << root->val << " ";
+	printTree(root->left);
+	printTree(root->right);
+    }
+}
+
 #endif

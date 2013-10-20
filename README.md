@@ -63,10 +63,24 @@ Something to remember:
 **3.4:**
 
 	A classical example for recursive and OOP.
+
 	Reference: http://hawstein.com/posts/3.4.html
 
 **3.7:**
 	
 	A example to learn inheritance.
+
 	Reference: https://github.com/xperzy/careerup150/blob/master/3-7.cpp
+
+**4.4:**
+
+	Need to how many nodes in each level.
+
+**4.9:**
+
+	1. The path does not cross a node.
+
+	2. Each node has a vector that contains all the values from its ancestors.
+
+	Reference: http://hawstein.com/posts/4.8.html
 
