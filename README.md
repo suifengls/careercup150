@@ -49,3 +49,24 @@ Something to remember:
 **2.5:**
 	
 	Reference: http://hawstein.com/posts/add-singly-linked-list.html
+
+**3.1:**
+
+	1. Member data and member function can NOT use the same name.
+
+	2. In class/struct, use -> for pointers, and use . for objects.
+
+**3.3:**
+	
+	Remember the ; in the end of a class definition.
+
+**3.4:**
+
+	A classical example for recursive and OOP.
+	Reference: http://hawstein.com/posts/3.4.html
+
+**3.7:**
+	
+	A example to learn inheritance.
+	Reference: https://github.com/xperzy/careerup150/blob/master/3-7.cpp
+
