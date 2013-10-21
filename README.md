@@ -84,3 +84,12 @@ Something to remember:
 
 	Reference: http://hawstein.com/posts/4.8.html
 
+**5.1:**
+
+	1. INT_MAX = ~(1 << 31), INT_MIN = (1 << 31)
+
+	2. Get sign-bit, if it is 1 (negative integer), other bis negate, then add 1.
+
+**5.3:**
+
+	In countone(int), while(n > 0) does NOT work for negative numbers to count the number of 1s.
