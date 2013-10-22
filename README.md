@@ -93,3 +93,7 @@ Something to remember:
 **5.3:**
 
 	In countone(int), while(n > 0) does NOT work for negative numbers to count the number of 1s.
+
+**5.5:**
+
+	n = n & (n-1) will clear the least significant bit in n.
