@@ -94,6 +94,7 @@ ListNode *addTwo2(ListNode *a, ListNode *b)
 	q = q->next;
 	int sum = a->next->val + b->next->val;
 	q->val = sum % 10;
+	// if sum = 9. keep p not moving
 	if(sum > 9)
 	{
 	    p->val++;
