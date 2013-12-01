@@ -65,6 +65,22 @@ public:
 		    return entry->getValue();
 	    }
 	}
+    void put(int key, int value)
+    {
+    	int hash = (key % TABLE_SIZE);
+    	if(table[hash] == NULL)
+    	    table[hash] = new HashEntry(key, value);
+    	else
+    	{
+    	    HashEntry *entry = table[hash];
+            while (entry->getNext() != NULL)
+                entry = entry->getNext();
+            if (entry->getKey() == key)
+                entry->setValue(value);
+             else
+                entry->setNext(new HashEntry(key, value));
+    	}
+    }
     void remove(int key)
 	{
 	    int hash = (key % TABLE_ZIZE);
