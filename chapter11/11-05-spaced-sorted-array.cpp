@@ -1,4 +1,4 @@
-#include "../careercup.h"
+#include "../careercup.h
 using namespace std;
 
 int findIndex(string str[], string target, int s, int e)
